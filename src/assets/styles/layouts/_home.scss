@@ -5,25 +5,19 @@
   box-sizing: border-box;
 }
 
-@mixin tablet {
-  @media (min-width: 768px) and (max-width: 1023px) {
-    @content;
-  }
-}
-
 @mixin pc {
-  @media (min-width: 1024px) {
+  @media (min-width: $mq-min-width-pc) {
     @content;
   }
 }
 
 @mixin tablet-pc {
-  @media (min-width: 768px) {
+  @media (min-width: $mq-min-width-tablet) {
     @content;
   }
 }
 
-body {
+.app {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -54,12 +48,13 @@ body {
   animation: typing 2s steps(20, end) forwards;
   font-size: clamp(22px, 5vw, 50px);
   line-height: 1.2em;
+  font-family: $title-font;
 }
 
 .secondary-title {
   font-size: 1.5rem;
 
-  i {
+  .icon-title {
     margin-right: 5px;
   }
 }
@@ -102,7 +97,6 @@ body {
 
   @include tablet-pc {
     flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -188,8 +182,5 @@ body {
     gap: 20px;
     justify-content: center;
     flex-direction: row;
-    div {
-      flex: 1;
-    }
   }
 }

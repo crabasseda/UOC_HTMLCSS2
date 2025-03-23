@@ -1,12 +1,10 @@
 @use "sass:color";
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
-$font-family-title: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+$title-font: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
-$mqMinWidth: 420px;
+$mq-min-width-tablet: 768px;
+$mq-min-width-pc: 1024px;
 
 $primary-bg: #f2c779;
 $card-bg: #f8e5c0;
