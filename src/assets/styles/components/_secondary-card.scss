@@ -1,0 +1,24 @@
+.secondary-card {
+  padding: 0 20px;
+  margin-top: 20px;
+  border-radius: 1rem;
+  background-color: $card-bg;
+  box-shadow: 0 4px 6px -1px $gray-700, 0 2px 4px -1px $gray-900;
+
+  &__title {
+    text-align: center;
+    color: $text-accent;
+    font-size: 1.2rem;
+  }
+}
+
+.secondary-card-hidden-info {
+  height: 60px;
+  overflow: hidden;
+  transition: height 0.5s;
+  interpolate-size: allow-keywords;
+
+  &:hover {
+    height: auto;
+  }
+}

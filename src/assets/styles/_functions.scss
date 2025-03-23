@@ -1,0 +1,15 @@
+@function visibility($state) {
+  @if $state == hidden {
+    @return (
+      opacity: 0,
+      transform: translateX(-50%) scale(0.8),
+      pointer-events: none
+    );
+  } @else if $state == visible {
+    @return (
+      opacity: 1,
+      transform: translateX(-50%) scale(1),
+      pointer-events: all
+    );
+  }
+}

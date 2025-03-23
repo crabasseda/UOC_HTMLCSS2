@@ -1,0 +1,24 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+  font-family: $font-family-serif;
+  text-align: center;
+  font-size: 0.7rem;
+  color: $gray-900;
+  background-color: $white;
+
+  &__author {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  &__email {
+    font-style: italic;
+    text-decoration: none;
+    color: $text-accent;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

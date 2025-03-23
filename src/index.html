@@ -1,36 +1,200 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Food discovere" />
     <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images//logo-rounded.png"
+    />
+
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
-    <!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Food discoverer</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source
-          srcset="./assets/images/logo.png?as=webp&width=350"
-          type="image/webp"
-        />
+    <include src="./views/header.html"></include>
+    <div class="container">
+      <h1 class="main-title">LA TORTILLA DE PATATAS</h1>
+      <section class="introduction">
+        <p class="text-align-justify introduction-text">
+          La tortilla de patatas es mucho más que un plato típico de la
+          gastronomía española; es un símbolo de tradición y hogar. <br /><br />
+          Presente en bares, celebraciones y comidas familiares, su sencillez y
+          sabor la han convertido en un imprescindible de la cocina. Su
+          versatilidad permite disfrutarla de mil formas: más o menos cuajada,
+          con o sin cebolla, fría o caliente.
+        </p>
         <img
-          src="./assets/images/logo.png?width=350"
-          alt="Universitat Oberta de Catalunya"
-          class="uoc-logo"
+          class="tortilla-img"
+          src="./assets/images/tortilla.jpg"
+          alt="Tortilla de patatas"
         />
-      </picture>
-      <h1 class="uoc-title"><i class="fas fa-university"></i> Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+      </section>
+      <section class="mt-10">
+        <h2 class="secondary-title">
+          <i class="fa-solid fa-timeline"></i>LA HISTORIA
+        </h2>
+
+        <p class="text-align-justify">
+          Aunque la patata llegó a Europa en el siglo XVI desde América, no fue
+          hasta el siglo XVIII cuando comenzó a incorporarse en la cocina
+          cotidiana. <br />
+          <br />
+          La primera referencia escrita sobre la tortilla de patatas se
+          encuentra en Navarra, en un documento de 1817, donde se menciona como
+          un plato sencillo y nutritivo, ideal para alimentar a la población en
+          tiempos de escasez. Sin embargo, una leyenda popular atribuye su
+          invención al general Tomás de Zumalacárregui, quien durante la Primera
+          Guerra Carlista (1833-1840) habría ideado esta receta como una forma
+          rápida y barata de alimentar a sus tropas. <br /><br />Otra teoría
+          sostiene que fue creada por una campesina navarra que improvisó con
+          los pocos ingredientes que tenía para ofrecerle algo de comer al
+          general.
+        </p>
+      </section>
+
+      <section class="mt-10">
+        <h2 class="secondary-title">
+          <i class="fa-solid fa-list"></i> LA RECETA DEFINITIVA
+        </h2>
+        <div class="recipe-container">
+          <div class="card">
+            <h3 class="card__title">Ingredientes</h3>
+            <ul class="card__list">
+              <li>4 patatas medianas</li>
+              <li>5 huevos</li>
+              <li>1 cebolla (opcional)</li>
+              <li>Aceite de oliva virgen extra</li>
+              <li>Sal al gusto</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card__title">Pasito a pasito</h3>
+            <ol class="card__list">
+              <li>
+                <strong>Pelar y cortar:</strong> Lava, pela y corta las patatas
+                en rodajas finas.
+              </li>
+              <li>
+                <strong>Freír:</strong> Cocina las patatas y la cebolla en
+                abundante aceite hasta que estén tiernas.
+              </li>
+              <li>
+                <strong>Batir los huevos:</strong> Mézclalos con las patatas
+                fritas y añade sal al gusto.
+              </li>
+              <li>
+                <strong>Cocinar:</strong> Vierte la mezcla en una sartén y
+                cocina a fuego medio. Da la vuelta con un plato.
+              </li>
+              <li>
+                <strong>Servir:</strong> Deja reposar y disfruta caliente o
+                templada.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="dialog-container">
+          <div class="question">
+            <p>
+              La abuelita guarda con cariño el ingrediente secreto de la mejor
+              tortilla...
+            </p>
+            <button id="show-bafarada" class="discover-button">
+              Descubrir 🔍
+            </button>
+          </div>
+          <div class="character-container">
+            <img
+              class="abuelita-img"
+              src="./assets/images/abuelita-2.png"
+              alt="Abuelita que nos enseña la receta"
+            />
+
+            <div class="bafarada-container hidden">
+              <svg
+                class="bafarada"
+                width="200"
+                height="150"
+                viewBox="0 0 200 150"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10,40 Q10,10 40,10 L160,10 Q190,10 190,40 L190,90 Q190,120 160,120 L80,120 L40,140 L50,120 Q10,120 10,90 Z"
+                  fill="white"
+                  stroke="black"
+                  stroke-width="3"
+                />
+                <text x="40" y="70">¡Mucho amor! ❤️</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="secondary-title">
+          <i class="fa-solid fa-triangle-exclamation"></i>EL DEBATE
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </h2>
+        <div class="container-secondary-cards">
+          <div class="secondary-card secondary-card-hidden-info">
+            <h3 class="secondary-card__title">¿CON O SIN CEBOLLA?</h3>
+            <p class="text-align-justify">
+              Si hay una cuestión capaz de dividir a España más que el fútbol o
+              la política, es sin duda el debate sobre la tortilla de patatas:
+              ¿con cebolla o sin cebolla? <br /><br />
+              Los "cebollistas" defienden que la cebolla aporta jugosidad, un
+              toque dulce y una textura más melosa que eleva la tortilla a otro
+              nivel. Para ellos, una tortilla sin cebolla es simplemente un
+              plato incompleto, una versión descafeinada de lo que debería ser
+              un manjar.
+              <br />
+              <br />
+              Por otro lado, los "sincebollistas" argumentan que la verdadera
+              esencia de la tortilla reside en la simplicidad de la patata y el
+              huevo. La cebolla, según ellos, enmascara el sabor puro de los
+              ingredientes y añade una humedad innecesaria.
+              <br /><br />
+              A pesar de las diferencias, hay algo en lo que todos coinciden:
+              una tortilla bien hecha, con o sin cebolla, sigue siendo una joya
+              de la gastronomía española. <br />Y tú, ¿de qué bando eres?
+            </p>
+          </div>
+          <div class="secondary-card secondary-card-hidden-info">
+            <h3 class="secondary-card__title">¿POCO HECHA O BIEN CUAJADA?</h3>
+            <p class="text-align-justify">
+              Si hay un debate que divide a los amantes de la tortilla de
+              patatas casi tanto como el de la cebolla, es el punto de cocción
+              del huevo. ¿Debe la tortilla quedar jugosa, casi líquida en su
+              interior, o completamente cuajada y firme? <br /><br />
+
+              Los defensores de la tortilla poco hecha aseguran que el secreto
+              de una tortilla perfecta está en su jugosidad. Una tortilla con el
+              huevo aún cremoso en su interior se deshace en la boca, tiene una
+              textura más suave y potencia el sabor de los ingredientes. Además,
+              para muchos, es la forma "auténtica" de prepararla, una técnica
+              que requiere precisión y habilidad para que el huevo no se pase de
+              cocción. <br /><br />
+
+              Por otro lado, los partidarios de la tortilla bien cuajada
+              prefieren una textura más compacta y homogénea, sin riesgo de que
+              el huevo quede crudo. Argumentan que una tortilla firme es más
+              fácil de manejar, perfecta para comer en bocadillo o para llevar a
+              un picnic sin miedo a que se desparrame. Además, en términos de
+              seguridad alimentaria, una tortilla bien cuajada reduce el riesgo
+              de problemas con el huevo crudo.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
-    <!-- do not remove this line! -->
   </body>
 </html>
