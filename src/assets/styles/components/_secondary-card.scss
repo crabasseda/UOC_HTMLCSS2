@@ -6,6 +6,7 @@
   border-radius: 1rem;
   background-color: $card-bg;
   box-shadow: 0 4px 6px -1px $gray-700, 0 2px 4px -1px $gray-900;
+  cursor: pointer;
 
   &__title {
     text-align: center;
@@ -24,6 +25,10 @@
   interpolate-size: allow-keywords;
 
   &:hover {
+    height: auto;
+  }
+
+  &.visible {
     height: auto;
   }
 }

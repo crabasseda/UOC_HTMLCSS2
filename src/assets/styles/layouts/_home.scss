@@ -48,7 +48,6 @@
   animation: typing 2s steps(20, end) forwards;
   font-size: clamp(22px, 5vw, 50px);
   line-height: 1.2em;
-  font-family: $title-font;
 }
 
 .secondary-title {
@@ -177,6 +176,7 @@
 .container-secondary-cards {
   display: flex;
   flex-direction: column;
+  padding: 10px 20px;
 
   @include tablet-pc {
     gap: 20px;
